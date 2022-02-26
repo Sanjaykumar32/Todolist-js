@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Khatabook</title>
+</head>
+
+<body>
+
+    <div class="container bg-light py-1">
+        <div class="book d-flex justify-content-center mt-4">
+            <i class="fas fa-book-open"></i>
+            <h1><span class="Khata">Khata</span>Book</h1>
+        </div>
+        <div class="d-flex mt-5 justify-content-between ">
+           <div class="">
+            <label for="">Search Name :-</label>
+            <input type="text" class="w-50" placeholder="Search Name">
+            </div>
+            <div>
+                <p>Date-Time </p>
+                <p id="time"></p>
+            </div>
+        </div>
+        <div class="name mt-5 d-flex" >
+            <label for="" class="font">Name :-</label><br>
+            <input class="w-50 m-left font" type="text" id="name">
+        </div>
+        <div class="name mt-4 d-flex" >
+            <label for="" class="font">Father Name :-</label><br>
+            <input class="w-50 m-left font" maxlength="10" type="text" id="fname">
+        </div>
+        <div class="name mt-4 d-flex" >
+            <label for="" class="font">Address</label><br>
+            <input class="w-100 m-left font" type="text" id="Address">
+        </div>
+        <div class="name mt-4 d-flex" >
+            <label for="" class="font">Mobile Number :-</label><br>
+            <input class="w-25 m-left font" maxlength="10" type="text" id="inputMobile">
+            <p id="errMobile" style="color: red;"></p>
+        </div>
+       
+        <div class="d-flex py-3">
+            <div class="name mt-4 d-flex " >
+                <label for="" class="font">Product</label><br>
+                <input class="w-100 m-left font" type="text" id="product">
+            </div>
+            <div class="name mt-4 d-flex mx-2" >
+                <label for="" class="font">Price</label><br>
+                <input class="w-100 m-left font"  type="text" id="price" placeholder="0">
+                <p id="errPrice" style="color: red;"></p>
+            </div>
+           
+        </div>
+        <div class="name mt-4 d-flex" >
+            <label for="" class="font">Deposit </label><br>
+            <input class="w-25 m-left font"  type="number" id="Deposit">
+        </div>
+        <button class="btn btn-success w-100 mt-4 border-0" id="btn">Submit</button>
+     
+
+        <label for="" class="d-flex total ">Total Amount :-
+              <p id="total" class="mx-lg-2" style="color: green;" >0</p>
+        </label>
+      
+        <table width="100%" border="1" class="t-box" id="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Father Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Deposit</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="./Khatabook.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

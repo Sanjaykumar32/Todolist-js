@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238, 234, 234);
+}
+.book i{
+    font-size: 40px;
+    margin: 3px 8px 0px 0px;
+}
+.Khata{
+    color: green;
+    margin: 0px 8px;
+}
+.font{
+    font-size: 20px;
+}
+.m-left{
+    margin: 0px 0px 0px 20px;
+}
+.t-box{
+   box-shadow: 1px 3px 4px rgb(212, 210, 210);
+ }
+.t-box thead tr th{
+    padding: 15px 5px;
+    font-size: 20px;
+}
+.total{
+    margin: 30px 0px 30px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
